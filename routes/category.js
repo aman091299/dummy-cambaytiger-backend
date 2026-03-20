@@ -4,7 +4,7 @@ const express = require("express");
 const categoryRouter = express.Router();
 
 categoryRouter.post("/category/create", async (req, res) => {
-  console.log("inside category", req.body);
+ 
   try {
     const category = new Category(req.body);
     
